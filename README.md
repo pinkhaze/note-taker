@@ -31,6 +31,8 @@
   ## Usage
 
   On the landing page, click on "Get Started" icon to see previously saved notes and create new notes.
+
+  
   
   Click on the plus sign icon to create a new note. Fill out the `Note Title` and `Note Text` fields. Click on the save icon to save the new note in the right-column. 
   
