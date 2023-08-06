@@ -26,11 +26,11 @@
   
   ## Installation
 
-  [Click here to see the deployed application](https://pinkhaze.github.io/note-taker/)
+  [Click here to see the deployed application](https://arcane-shelf-70616-786475f54288.herokuapp.com/)
 
   ## Usage
 
-  On the landing page, click on "Get Started" icon to see previously saved notes and create new notes.
+  On the landing page, click on the "Get Started" icon to see previously saved notes and create new notes.
 
   ![Note_Taker_Screenshot_1](https://github.com/pinkhaze/note-taker/assets/55771228/24797cec-4730-43a7-a959-f8e6610435ef)
 
