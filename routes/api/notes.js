@@ -41,5 +41,21 @@ notes.post('/', (req, res) => {
     }
 });
 
+// API route for DELETE /api/notes/:id
+// Read all notes from db.json file, remove note w/ given id property, and rewrite filtered notes to db.json file
+notes.delete('/:id', (req, res) => {
+  console.log(`${req.method} request received for note deletion`);
+
+  fs.readFile('./db/db.json', 'utf-8', (err, data) => {
+    if (err) throw err
+    const parsedNotes = JSON.parse(data)
+    const filteredNotes = parsedNotes.filter((note) => note.id !== req.params.id);
+    
+    fs.writeFile('./db/db.json', JSON.stringify(filteredNotes, null, 3), function() {
+      if (err) throw err;
+      return res.json(filteredNotes)
+    })
+  })
+})
 
 module.exports = notes;
