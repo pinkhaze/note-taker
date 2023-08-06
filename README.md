@@ -40,6 +40,8 @@
   ![Note_Taker_Screenshot_3](https://github.com/pinkhaze/note-taker/assets/55771228/3b8e8176-5679-4c57-8079-c7651b574e5d)
   
   ## Credits
+
+  [Heroku Deployment Guide](https://coding-boot-camp.github.io/full-stack/heroku/heroku-deployment-guide)
   
   ## License
 
