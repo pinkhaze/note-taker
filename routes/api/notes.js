@@ -15,7 +15,31 @@ notes.get('/', (req, res) => {
     });
 });
 
+// API route for POST /api/notes
+// 
+notes.post('/', (req, res) => {
+    console.log(`${req.method} request received for new note`);
+    console.log(req.body);
 
+    const { title, text } = req.body;
+    if (req.body) {
+        const newNote = {
+            id: uuid.v4(),
+            title,
+            text,
+        };
+        
+        fs.readFile('./db/db.json', 'utf-8', (err, data) => {
+            if (err) throw err
+            const parsedNotes = JSON.parse(data)
+            parsedNotes.push(newNote);
+            fs.writeFile('./db/db.json', JSON.stringify(parsedNotes, null, 3), function () {
+                if (err) throw err;
+                return res.json(parsedNotes)
+            });
+        });
+    }
+});
 
 
 module.exports = notes;
