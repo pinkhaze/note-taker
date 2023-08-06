@@ -32,14 +32,15 @@
 
   On the landing page, click on "Get Started" icon to see previously saved notes and create new notes.
 
-  
-  
+  ![Note_Taker_Screenshot_1](https://github.com/pinkhaze/note-taker/assets/55771228/24797cec-4730-43a7-a959-f8e6610435ef)
+
   Click on the plus sign icon to create a new note. Fill out the `Note Title` and `Note Text` fields. Click on the save icon to save the new note in the right-column. 
+
+  ![Note_Taker_Screenshot_2](https://github.com/pinkhaze/note-taker/assets/55771228/28b11413-94a2-47c3-9184-b1f09942fec8)
+  ![Note_Taker_Screenshot_3](https://github.com/pinkhaze/note-taker/assets/55771228/3b8e8176-5679-4c57-8079-c7651b574e5d)
   
   ## Credits
   
-  
-
   ## License
 
   [MIT License](https://choosealicense.com/licenses/mit/) 
