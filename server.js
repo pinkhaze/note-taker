@@ -28,7 +28,7 @@ app.get('/*', (req, res) => {
   res.sendFile(path.join(__dirname, 'public/index.html'));
 });
 
-// Listen for incoming connections on the specified port 
+// listen() method is responsible for listening for incoming connections on the specified port 
 app.listen(PORT, () =>
-  console.log(`Example app listening at http://localhost:${PORT}`)
+  console.log(`Note Taker app listening at http://localhost:${PORT}`)
 );
